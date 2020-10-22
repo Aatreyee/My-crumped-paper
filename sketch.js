@@ -35,11 +35,11 @@ function draw() {
 	box2.display();
 	box3.display();
 	ground.display();
-	KeyPressed();
+}
 
-function KeyPressed(){
-	if(KeyCode===UP_ARROW){ 
-		Matter.Body.applyForce(trashObject.body,trashObject.body.position,{x:85,y:-85});
+function keyPressed(){
+	if(keyCode===UP_ARROW){ 
+		Matter.Body.applyForce(trash.body,trash.body.position,{x:85,y:-85});
 		
 	}
 	
@@ -49,5 +49,5 @@ function KeyPressed(){
   
  
  
-}
+
 
